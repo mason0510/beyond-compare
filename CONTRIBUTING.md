@@ -9,7 +9,7 @@
 如果你发现了问题，请：
 
 1. **使用 GitHub Issues**
-   - 点击 [New Issue](https://github.com/mason0510/beyond-compare/issues/new)
+   - 点击 [New Issue](https://github.com/kcd-dev/tcd-beyond-compare/issues/new)
    - 选择 "Bug Report" 模板
 
 2. **清晰描述问题**
@@ -47,7 +47,7 @@
 有新功能建议？
 
 1. **使用 GitHub Issues**
-   - 点击 [New Issue](https://github.com/mason0510/beyond-compare/issues/new)
+   - 点击 [New Issue](https://github.com/kcd-dev/tcd-beyond-compare/issues/new)
    - 选择 "Feature Request" 模板
 
 2. **说明需求背景**
@@ -83,8 +83,8 @@
 ```bash
 # Fork 项目到你的账户
 # 然后 Clone 你的 Fork
-git clone https://github.com/YOUR-USERNAME/beyond-compare.git
-cd beyond-compare
+git clone https://github.com/YOUR-USERNAME/tcd-beyond-compare.git
+cd tcd-beyond-compare
 ```
 
 #### 2. 创建特性分支

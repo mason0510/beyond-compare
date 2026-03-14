@@ -123,8 +123,8 @@ src/
 
 ```bash
 # 克隆仓库
-git clone https://github.com/mason0510/beyond-compare.git
-cd beyond-compare
+git clone https://github.com/kcd-dev/tcd-beyond-compare.git
+cd tcd-beyond-compare
 
 # 安装依赖（如果有）
 npm install

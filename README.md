@@ -23,13 +23,65 @@
 
 ### 安装
 
-1. **获取 Skill**
+1. **给小白看的 npx 一键安装（推荐）**
+
+   這一段是專門寫給完全沒折騰過 Skill 的同學用的，照著一步一步敲就行：
+
    ```bash
-   # Skill 已集成在 Claude Code 中
-   # 在 Claude Code 会话中直接使用
+   # 前置條件：已安裝 Node.js（推薦 18+），終端裡能用 npx
+
+   # 1）克隆開源倉庫（把代碼拉到本地）
+   git clone https://github.com/kcd-dev/tcd-beyond-compare.git
+   cd tcd-beyond-compare
+
+   # 2）用 npx 執行安裝腳本（將 SKILL.md 拷貝到正確目錄）
+   #   說人話：這一步就是「幫你放好文件」，不用自己找路徑
+   npx github:kcd-dev/tcd-beyond-compare install
+
+   # 3）重啟 Claude Code / OpenCode，這個 Skill 就可以用了
    ```
 
-2. **触发方式**
+   小白理解版流程：
+
+   ```
+   ┌────────────┐
+   │  第一步：拉代碼 │ git clone
+   └──────┬─────┘
+          ▼
+   ┌────────────┐
+   │ 第二步：npx  │ 自動安裝 Skill
+   └──────┬─────┘
+          ▼
+   ┌────────────┐
+   │ 第三步：重啟 │ 重啟 Claude / OpenCode
+   └────────────┘
+   ```
+
+2. **手動安裝 Skill（進階用戶，區分 claudecode / opencode）**
+
+   如果你更習慣手動控制路徑，可以根據自己用的是哪個工具，把 `SKILL.md` 放到對應目錄：
+
+   - 用 `OpenCode`（命令行版本）：`~/.config/opencode/skills/beyond-compare/SKILL.md`
+   - 用 `ClaudeCode`（桌面版）：`~/.claude/skills/beyond-compare/SKILL.md`
+
+   示例命令（兩種工具都覆蓋到）：
+
+   ```bash
+   git clone https://github.com/kcd-dev/tcd-beyond-compare.git
+   cd tcd-beyond-compare
+
+   # 給 OpenCode 用
+   mkdir -p ~/.config/opencode/skills/beyond-compare
+   cp SKILL.md ~/.config/opencode/skills/beyond-compare/SKILL.md
+
+   # 給 ClaudeCode 用
+   mkdir -p ~/.claude/skills/beyond-compare
+   cp SKILL.md ~/.claude/skills/beyond-compare/SKILL.md
+
+   # 然後重啟 Claude Code / OpenCode
+   ```
+
+3. **触发方式**
    ```bash
    # 方式 1：直接调用
    /beyond-compare
@@ -182,12 +234,12 @@ Claude: [自动生成 cors-bug-fix-diff.html]
 
 ```bash
 # 克隆项目
-git clone https://github.com/mason0510/beyond-compare.git
-cd beyond-compare
+git clone https://github.com/kcd-dev/tcd-beyond-compare.git
+cd tcd-beyond-compare
 
 # 查看项目结构
 tree -L 2
-# beyond-compare/
+# tcd-beyond-compare/
 # ├── README.md
 # ├── README_EN.md
 # ├── ARCHITECTURE.md
@@ -215,7 +267,7 @@ npm test
 ### 项目结构说明
 
 ```
-beyond-compare/
+tcd-beyond-compare/
 ├── README.md                  # 中文项目说明
 ├── README_EN.md              # 英文项目说明
 ├── ARCHITECTURE.md           # 架构设计文档
@@ -266,7 +318,7 @@ const highlightPatterns = {
 - **GitHub**: [@mason0510](https://github.com/mason0510)
 - **Email**: zhang_989898@126.com
 - **WeChat**: zhcmason
-- **Issues**: [GitHub Issues](https://github.com/mason0510/beyond-compare/issues)
+- **Issues**: [GitHub Issues](https://github.com/kcd-dev/tcd-beyond-compare/issues)
 
 ## 📄 许可证
 

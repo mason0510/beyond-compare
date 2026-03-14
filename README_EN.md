@@ -23,13 +23,65 @@
 
 ### Installation
 
-1. **Get the Skill**
+1. **Beginner-friendly npx install (recommended)**
+
+   This section is written for absolute beginners. Just follow the steps exactly:
+
    ```bash
-   # Skill is integrated in Claude Code
-   # Use directly in Claude Code sessions
+   # Prerequisite: Node.js installed (18+ recommended), and `npx` works in your terminal
+
+   # 1) Clone the open source repo (download the code locally)
+   git clone https://github.com/kcd-dev/tcd-beyond-compare.git
+   cd tcd-beyond-compare
+
+   # 2) Use npx to run the installer (copies SKILL.md to the correct folder)
+   #    In plain English: this step "puts the file in the right place" for you
+   npx github:kcd-dev/tcd-beyond-compare install
+
+   # 3) Restart Claude Code / OpenCode, and the skill is ready to use
    ```
 
-2. **Trigger Methods**
+   Beginner mental model:
+
+   ```
+   ┌────────────────┐
+   │ Step 1: clone  │ git clone
+   └─────────┬──────┘
+             ▼
+   ┌────────────────┐
+   │ Step 2: npx    │ auto-install skill
+   └─────────┬──────┘
+             ▼
+   ┌────────────────┐
+   │ Step 3: restart│ restart Claude / OpenCode
+   └────────────────┘
+   ```
+
+2. **Manual installation (for advanced users, claudecode vs opencode)**
+
+   If you prefer full control, use different skill directories depending on which tool you use:
+
+   - Using `OpenCode` (CLI version): `~/.config/opencode/skills/beyond-compare/SKILL.md`
+   - Using `ClaudeCode` (desktop): `~/.claude/skills/beyond-compare/SKILL.md`
+
+   Example that installs for both tools:
+
+   ```bash
+   git clone https://github.com/kcd-dev/tcd-beyond-compare.git
+   cd tcd-beyond-compare
+
+   # For OpenCode
+   mkdir -p ~/.config/opencode/skills/beyond-compare
+   cp SKILL.md ~/.config/opencode/skills/beyond-compare/SKILL.md
+
+   # For ClaudeCode
+   mkdir -p ~/.claude/skills/beyond-compare
+   cp SKILL.md ~/.claude/skills/beyond-compare/SKILL.md
+
+   # Then restart Claude Code / OpenCode
+   ```
+
+3. **Trigger Methods**
    ```bash
    # Method 1: Direct command
    /beyond-compare
@@ -182,12 +234,12 @@ Syntax highlighting supports the following programming languages:
 
 ```bash
 # Clone the project
-git clone https://github.com/mason0510/beyond-compare.git
-cd beyond-compare
+git clone https://github.com/kcd-dev/tcd-beyond-compare.git
+cd tcd-beyond-compare
 
 # View project structure
 tree -L 2
-# beyond-compare/
+# tcd-beyond-compare/
 # ├── README.md
 # ├── README_EN.md
 # ├── ARCHITECTURE.md
@@ -215,7 +267,7 @@ npm test
 ### Project Structure
 
 ```
-beyond-compare/
+tcd-beyond-compare/
 ├── README.md                  # Chinese project documentation
 ├── README_EN.md              # English project documentation
 ├── ARCHITECTURE.md           # Architecture design document
@@ -266,7 +318,7 @@ const highlightPatterns = {
 - **GitHub**: [@mason0510](https://github.com/mason0510)
 - **Email**: zhang_989898@126.com
 - **WeChat**: zhcmason
-- **Issues**: [GitHub Issues](https://github.com/mason0510/beyond-compare/issues)
+- **Issues**: [GitHub Issues](https://github.com/kcd-dev/tcd-beyond-compare/issues)
 
 ## 📄 License
 
