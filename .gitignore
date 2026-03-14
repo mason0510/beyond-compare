@@ -1,0 +1,142 @@
+# 语言特定
+*.o
+*.a
+*.so
+.DS_Store
+node_modules/
+.env
+.env.local
+.env.*.local
+target/
+dist/
+build/
+*.log
+logs/
+
+# IDE
+.vscode/
+.idea/
+.sublime-project
+.sublime-workspace
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+
+# 敏感信息
+credentials/
+secrets/
+.aws/
+.ssh/
+.netrc
+
+# 临时文件和缓存
+tmp/
+temp/
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+*.egg-info/
+dist/
+build/
+
+# OS 特定
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# 构建产物
+/out/
+*.dll
+*.exe
+*.app
+
+# 开发工具
+.vscode-test/
+test-results/
+*.vsix
+
+# 编辑器备份
+*.bak
+*.swp
+*~
+
+# npm / yarn
+package-lock.json
+yarn.lock
+.yarn/cache/
+.yarn/install-state.gz
+
+# 生成的文件
+TAGS
+tags
+.tags
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 日志
+logs
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# 测试
+coverage/
+.nyc_output/
+
+# 文档生成
+site/
+docs/_build/
+
+# 其他
+.grunt/
+.gulp/
+bower_components/
+
+# 编译输出
+*.min.js
+*.min.css
+
+# 发布物品
+releases/
+*.tar.gz
+*.zip
+
+# Git 相关
+.git/
+.gitmodules
+
+# CI/CD
+.github/workflows/test-results/
+.travis.yml.local
+
+# Docker
+Dockerfile.local
+docker-compose.local.yml
+.dockerignore
+
+# 本地开发配置
+.local/
+.env.local
+local.conf
+
+# 编辑器特定
+*.sublime-workspace
+*.sublime-project
+
+# 备份文件（按 safe-file-archive-mv 规范，不删除而是归档）
+# .trash/ 目录会在需要时创建用于归档
